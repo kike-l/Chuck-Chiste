@@ -1,0 +1,71 @@
+dicccionario Sesion usuario
+    sesion={
+            "resultado_sesion":None,
+            "valorsesion":[],
+            "Nsesion":nSes,
+            "TimeStart":timeStart,
+            "TimeFin":None,
+            "Njokes":None,
+            "votoChiste":[],
+            "valorChiste":[]
+            }    
+
+
+diccionario de cliente/usuario:
+    userDic = { 
+                "nombre":nombre,
+                "apellido1": apellido1,
+                "apellido2": apellido2,
+                "creacionUser": inTime,
+                "totalSesiones": nSes,
+                "rDBchiste":rDBchiste,
+                "rDBC":rDBC,
+                "rchistesS":rchistesS,
+                "rDirUser":str(dirUser),
+                "rArchUser":str(archUser),
+                "sesiones": [{
+                        "resultado_sesion":None, #LLamada a funcion valorar O LISTA DE ARGUMENTOS PARA LA LLAMADA A CREACION DE INFORME
+                        "valorsesion":[],
+                        "Nsesion":nSes,
+                        "TimeStart":inTime,
+                        "TimeFin":None,
+                        "Njokes":None,
+                        "votoChiste":[],
+                        "valorChiste":[] 
+                        }]
+                } 
+
+diccionario de sesion chistes:
+    chistesS= {
+                "chistes":[ {
+                        "sesion":nSes,
+                        "nchiste":None,
+                        "votoChiste":int(), 
+                        "valorsesion":None,
+                        "valorChiste":None,
+                        "chiste":str() }
+                            ]
+                    }
+
+diccionario  de base datos TODAS SESIONES TODOS CLIENTES:
+
+    chuc_N_ChisteDB=[
+                        {   
+                        "datachiste":{ 
+                            'categories': None,
+                            'created_at':None ,
+                            "valorChiste": [],  
+                            'value': str()},
+                        "numvisto":None,
+                        "votos_Total":{
+                            "unaStar":None, 
+                            "dosStar":None, 
+                            "tresStar":None, 
+                            "noStar":None }
+                            }
+                    ]
+    
+    Direcctorios de archivos de voz:
+    directorio contiene todos los archivos de voz de los chiste.
+    este directorio se crea solo una vez y perdura es comun a todos los clientes, almacena todos los
+    chistes adquiridos por el programa.
